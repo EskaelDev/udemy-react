@@ -1,8 +1,8 @@
-import * as React from "react";
-import "./expense-date.scss"
+import * as React from 'react';
+import './expense-date.scss'
 export default class ExpenseDate extends React.Component<{ date: Date }> {
-  month = this.props.date.toLocaleString("en-US", { month: "long" });
-  day = this.props.date.toLocaleString("en-US", { day: "2-digit" });
+  month = this.props.date.toLocaleString('en-US', { month: 'long' });
+  day = this.props.date.toLocaleString('en-US', { day: '2-digit' });
   year = this.props.date.getFullYear();
 
   render() {
